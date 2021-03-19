@@ -6,9 +6,9 @@ function rangeOfNumbers(startN, endN) {
         if (startN > endN){
             return "The starting number will always be less than or equal to the ending number"
         }
-        const range = rangeOfNumbers(startN, endN - 1);
-        range.push(endN);
-        return range;
+        const countArray = rangeOfNumbers(startN, endN - 1);
+        countArray.push(endN);
+        return countArray;
 
     }
 }
